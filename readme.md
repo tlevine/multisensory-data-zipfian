@@ -1,6 +1,7 @@
 # Multisensory data experiences
 <!-- For the Zipfian Academy July 2 class -->
 Thomas Levine ([thomaslevine.com](http://thomaslevine.com)),
+
 CSV Soundsystem ([csvsoundsystem.com](http://csvsoundsystem.com))
 
 [tlevine.github.io/multisensory-data-zipfian](http://tlevine.github.io/multisensory-data-zipfian)
@@ -39,13 +40,13 @@ Percent of All Subject Officers Against Whom Allegations were Substantiated,0%,0
 
 
 ## Data sonification
-[![FMS Symphony](screenshot.png)](http://fms.csvsoundsystem.com)
+[![FMS Symphony](fms-symphony-preview.png)](http://fms.csvsoundsystem.com)
 
 
 
 ## Data sonification
 <!-- Ridership Rachenitsa -->
-<video src="transit.webm" controls>
+<video src="transit.webm" controls width="100%">
 
 
 
@@ -57,6 +58,12 @@ Percent of All Subject Officers Against Whom Allegations were Substantiated,0%,0
 
 ## Take-aways
 
-* Present the multivariate world. (Escape Flatland.)
+* Present the multivariate world; escape Flatland.
 * Data can be mapped to anything.
-* Data is in.
+
+
+## More resources
+
+* [Music videos in R](http://livestre.am/4pN67)
+* [Data-driven rhythms](https://github.com/csv/ddr)
+* [A blog post](http://thomaslevine.com/!/sensory-data-experiences/)
