@@ -20,9 +20,6 @@ I could make a website that gives you the recipe for a particular
 parking lot. Then people construct the cookie and put it on a map.
 Then we eat them.
 
-This is pretty good, but it has fewer variables than I would have
-liked.
-
 `lot.type` is formed by combining the prime and second type columns.
 It corresponds to the kind of .
 
@@ -67,6 +64,9 @@ sprinkles. If neither is true, use brown sprinkles.
 Once you have prepared the cookie, put it on a plate and then put the plate
 at the appropriate point on the map.
 
+This is pretty good in terms of interestingness and types of variables, but
+it has fewer variables than I would have liked. It has like nine variables.
+
 ### Lombardia museums
 [This one](https://dati.lombardia.it/dati/Sanit-/Elenco-RSA-Accreditate/3syc-54zf)
 is too perfect. It has information about museums, including many boolean
@@ -100,3 +100,6 @@ These are things I created.
 
 * `has.free.day`: Whether there is a free day at the museum,
     based on `MUSEO_GIORNO_INGRESSO_GRATUITO`
+
+That's like 19 variables, but they're mostly boolean and none
+are particularly numerical.
