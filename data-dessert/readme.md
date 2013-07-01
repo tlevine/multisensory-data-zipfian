@@ -9,7 +9,7 @@ Here are some [different kinds of cookie](http://en.wikipedia.org/wiki/Cookie)
 
 ## Data
 I looked for popular datasets on Socrata with lots of
-columns and came up with these
+columns and came up with these.
 
 ### San Francisco Parking
 [SF parking lots](https://data.sfgov.org/Transportation/Off-Street-parking-lots-and-parking-garages/uupn-yfaw?)
@@ -66,3 +66,8 @@ sprinkles. If neither is true, use brown sprinkles.
 
 Once you have prepared the cookie, put it on a plate and then put the plate
 at the appropriate point on the map.
+
+### Lombardia museums
+[This one](https://dati.lombardia.it/dati/Sanit-/Elenco-RSA-Accreditate/3syc-54zf)
+is too perfect. It has information about museums, including many boolean
+fields like audioguide service.
