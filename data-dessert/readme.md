@@ -146,6 +146,26 @@ reasonable ways of making the map
 * a tablecloth (on a table) that I can draw the map on
 * an area on the floor that I can put masking tape on
 
+Assembly process
+
+1. Tom explains the process.
+2. While Tom explains the process, someone passes out recipes, one per person.
+3. When the explanation is explained, people go to the table
+    corresponding to their type of cookie. Each table has the
+    one type of cookie and all of the toppings.
+4. People assemble their cookies.
+5. People put the cookies on the map.
+6. We discuss the map and take a picture.
+7. Then we eat.
+
+Utencils
+
+We have four tables. At each table, we need
+
+* A knife
+* Two spoons
+* Three spatulas
+
 ## Calculating amounts
 For the proportions of the cakes, consider this
 
