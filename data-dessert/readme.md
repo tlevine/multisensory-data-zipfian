@@ -20,15 +20,15 @@ I could make a website that gives you the recipe for a particular
 parking lot. Then people construct the cookie and put it on a map.
 Then we eat them.
 
-`lot.type` is formed by combining the prime and second type columns.
-It corresponds to the kind of .
+`types` are the business structure of the parking lot. They are
+formed from `PrimeType` and `SecondType`. Add toppings corresponding
+to those types; if there are two types, add two toppings.
 
-* CGO is 
-* CPO is
-* FPA is 
-* PHO is 
-* PPA is 
-* Multiple types is 
+* For (`CGO`), add an Oreo.
+* For (`CPO`), add a Reese's Piece.
+* For (`FPA`), add a marshmallow.
+* For (`PHO`), add cherry.
+* For (`PPA`), add a dollop of jam.
 
 `garage` is formed from the `GarOrLot` field, removing things that
 are neither garages nor lots and things that are both garages and lots.
@@ -38,10 +38,11 @@ are neither garages nor lots and things that are both garages and lots.
 * Lot is chocolate chip cookie cake.
 
 `private` is whether the parking lot owned by a private entity. It is
-formed from the `Owner` field. It corresponds to the type of icing.
+formed from the `Owner` field. It corresponds to the presence of nuts
+in the cookie/brownie.
 
-* Public is white (vanilla) icing.
-* Private is brown (chocolate) icing.
+* For a public parking lot, use the brownie/cookie **without** nuts.
+* For private, use the one **with** nuts.
 
 `land.use.type` is the zoning of the land. Rather than representing this
 in the cookie, let's represent this in the map.
@@ -53,13 +54,13 @@ all cookies are 1.5 inches wide, and their length is
 `log.parking.spots` times 1 inch.
 
 `has.valet` is whether there is at least one valet spot. That is, it's
-whether `ValetCap` is greater than zero. If this is true, use red sprinkles.
+whether `ValetCap` is greater than zero. If this is true, use red icing.
 
 `has.motorcycle` is whether there is at least one motorcycle spot. That is, it's
-whether `MCCap` is greater than zero. If this is true, use blue sprinkles.
+whether `MCCap` is greater than zero. If this is true, use blue icing.
 
 If both `has.valet` and `has.motorcycle` are true, use both red and blue
-sprinkles. If neither is true, use brown sprinkles.
+icing. If neither is true, use white icing.
 
 Once you have prepared the cookie, put it on a plate and then put the plate
 at the appropriate point on the map.
@@ -103,3 +104,11 @@ These are things I created.
 
 That's like 19 variables, but they're mostly boolean and none
 are particularly numerical.
+
+### Datasets that I looked at briefly
+These [landslides](https://data.seattle.gov/-/-/e498-ae22)
+are cool, but the only numerical field is date, and there isn't
+much variance in the other fields' values.
+
+[Worker compensation](https://data.oregon.gov/Business/Workers-Compensation-Costs-Percent-of-National-Med/52s9-f7ab)
+is deceptively wide; it can be melted into three columns.
