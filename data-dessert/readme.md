@@ -78,4 +78,23 @@ fields like audioguide service. Here are the fields we'll use.
 * `SEDE_COMUNE` (municipality):
 * `SEDE_PROVINCIA` (province):
 * `SEDE_APERTA_STATO`:
-* 
+* `SEDE_CHIUSURA_MOTIVO` (why it closed):
+* `MUSEO_INGRESSO`: `A PAGAMENTO` (paid) or `` (free)
+* `MUSEO_GIORNO_INGRESSO_GRATUITO` (free day):
+
+These are all boolean. `SI` is true, and anything else is false.
+
+* `vi_sono_parcheggi_in_zona` (has parking)
+* `ck_biblioteca` (library)
+* `ck_aula_attivita_didattiche_ed` (educational activities)
+* `ck_sale_studio`(study rooms)
+* `ck_archivio` (archives?)
+* `ck_fototeca` (foto library)
+* `ck_sala_conferenze` (conference room)
+* `ck_sala_proiezioni_audio_video` 
+* `ck_biglietteria` (ticket office)
+* `ck_guardaroba` (coat room)
+* `ck_area_per_accoglienza` (welcome area)
+* `ck_book_shop` 
+* `ck_caffetteria_ristorante`
+* `ck_area_x_prima_infanzia` (baby area)
