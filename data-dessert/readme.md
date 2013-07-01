@@ -20,6 +20,9 @@ I could make a website that gives you the recipe for a particular
 parking lot. Then people construct the cookie and put it on a map.
 Then we eat them.
 
+This is pretty good, but it has fewer variables than I would have
+liked.
+
 `lot.type` is formed by combining the prime and second type columns.
 It corresponds to the kind of .
 
