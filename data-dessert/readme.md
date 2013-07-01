@@ -72,15 +72,12 @@ at the appropriate point on the map.
 is too perfect. It has information about museums, including many boolean
 fields like audioguide service. Here are the fields we'll use.
 
-* `SEDE_ACCESSIBILE_AI_DISABILI`: 
+* `SEDE_ACCESSIBILE_AI_DISABILI`: `NON ACCESSIBILE`, `PARZIALMENTE` or `TOTALMENTE`
 * `MUSEO_DENOMINAZIONE` (name):
 * `MUSEO_TIPOLOGIA` (type of museum):
-* `SEDE_COMUNE` (municipality):
-* `SEDE_PROVINCIA` (province):
-* `SEDE_APERTA_STATO`:
-* `SEDE_CHIUSURA_MOTIVO` (why it closed):
-* `MUSEO_INGRESSO`: `A PAGAMENTO` (paid) or `` (free)
-* `MUSEO_GIORNO_INGRESSO_GRATUITO` (free day):
+* `SEDE_COMUNE` (municipality)
+* `SEDE_PROVINCIA` (province)
+* `MUSEO_INGRESSO`: `A PAGAMENTO` (paid) or `GRATUITO` (free)
 
 These are all boolean. `SI` is true, and anything else is false.
 
@@ -98,3 +95,8 @@ These are all boolean. `SI` is true, and anything else is false.
 * `ck_book_shop` 
 * `ck_caffetteria_ristorante`
 * `ck_area_x_prima_infanzia` (baby area)
+
+These are things I created.
+
+* `has.free.day`: Whether there is a free day at the museum,
+    based on `MUSEO_GIORNO_INGRESSO_GRATUITO`
