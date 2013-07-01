@@ -119,24 +119,34 @@ I decided to go with SF parking.
 I'm planning for about 40 people, one cookie each,
 with some extra to account for variance in recipe selections.
 
-Broadly speaking, we need these things.
+Broadly speaking, we need these food items.
 
-* An uncut brownie without nuts
-* An uncut brownie with nuts
-* An uncut cookie cake without nuts
-* An uncut cookie cake with nuts
-* Oreos
-* Reese's Pieces
-* marshmallows
-* marashino cherries
-* jam
-* white icing
-* colorful icing of one color
-* colorful icing of another color
-* small plates or napkins
+* Cookie base (We can swap brownie with cookie cake if that makes baking/purchasing easier.)
+  * An uncut brownie without nuts (120 square inches)
+  * An uncut brownie with nuts (20 square inches)
+  * An uncut cookie cake without nuts (210 square inches)
+  * An uncut cookie cake with nuts (70 square inches)
+* A package of each of these toppings (Other toppings can be substituted if these aren't easy.)
+  * Oreos
+  * Reese's Pieces
+  * marshmallows
+  * marashino cherries
+  * jam
+* Icing
+  * white icing (enough for 400 square inches of cookie)
+  * colorful icing of one color (just one small package)
+  * colorful icing of another color (just one small package)
+* Two bottles of sprinkles, each of a different color
+* 40 small plates or napkins
+
+The plates of cookies are going to go on a map. I see a few
+reasonable ways of making the map
+
 * a big print-out of that big map
+* a tablecloth (on a table) that I can draw the map on
+* an area on the floor that I can put masking tape on
 
-## Amounts
+## Calculating amounts
 For the proportions of the cakes, consider this
 
     parking$private <- parking$Owner == 'Private'
