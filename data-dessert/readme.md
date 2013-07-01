@@ -70,4 +70,12 @@ at the appropriate point on the map.
 ### Lombardia museums
 [This one](https://dati.lombardia.it/dati/Sanit-/Elenco-RSA-Accreditate/3syc-54zf)
 is too perfect. It has information about museums, including many boolean
-fields like audioguide service.
+fields like audioguide service. Here are the fields we'll use.
+
+* `SEDE_ACCESSIBILE_AI_DISABILI`: 
+* `MUSEO_DENOMINAZIONE` (name):
+* `MUSEO_TIPOLOGIA` (type of museum):
+* `SEDE_COMUNE` (municipality):
+* `SEDE_PROVINCIA` (province):
+* `SEDE_APERTA_STATO`:
+* 
