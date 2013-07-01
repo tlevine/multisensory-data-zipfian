@@ -41,8 +41,8 @@ are neither garages nor lots and things that are both garages and lots.
 formed from the `Owner` field. It corresponds to the presence of nuts
 in the cookie/brownie.
 
-* For a public parking lot, use the brownie/cookie **without** nuts.
-* For private, use the one **with** nuts.
+* For a public parking lot, use the brownie/cookie **with** nuts.
+* For private, use the one **without** nuts.
 
 `land.use.type` is the zoning of the land. Rather than representing this
 in the cookie, let's represent this in the map.
@@ -63,7 +63,8 @@ If both `has.valet` and `has.motorcycle` are true, use both red and blue
 icing. If neither is true, use white icing.
 
 Once you have prepared the cookie, put it on a plate and then put the plate
-at the appropriate point on the map.
+at the appropriate point on the map. Perhaps I should switch the longitude
+and latitude for just a grid cell on a less precise map.
 
 This is pretty good in terms of interestingness and types of variables, but
 it has fewer variables than I would have liked. It has like nine variables.
@@ -112,3 +113,68 @@ much variance in the other fields' values.
 
 [Worker compensation](https://data.oregon.gov/Business/Workers-Compensation-Costs-Percent-of-National-Med/52s9-f7ab)
 is deceptively wide; it can be melted into three columns.
+
+## Recipe
+I decided to go with SF parking.
+I'm planning for about 40 people, one cookie each,
+with some extra to account for variance in recipe selections.
+
+Broadly speaking, we need these things.
+
+* An uncut brownie without nuts
+* An uncut brownie with nuts
+* An uncut cookie cake without nuts
+* An uncut cookie cake with nuts
+* Oreos
+* Reese's Pieces
+* marshmallows
+* marashino cherries
+* jam
+* white icing
+* colorful icing of one color
+* colorful icing of another color
+* small plates or napkins
+* a big print-out of that big map
+
+## Amounts
+For the proportions of the cakes, consider this
+
+    parking$private <- parking$Owner == 'Private'
+    cookies <- ddply(subset(parking, GarOrLot == 'G' | GarOrLot == 'L'), c('private', 'GarOrLot'), function(df) {
+      spots <- rowSums(df[c('RegCap', 'ValetCap', 'MCCap')])
+      c(mean.cookie.area = mean(log(spots)), nlots = nrow(df))
+    })
+    weighted.mean(cookies$mean.cookie.area, cookies$nlots)
+    cookies$cookie.area.to.make <- cookies$mean.cookie.area * cookies$nlots * (60 / max(cookies$nlots))
+    cookies
+    # private GarOrLot mean.cookie.area nlots cookie.area.to.buy
+    # 1   FALSE        G         5.642826    42           17.97714
+    # 2   FALSE        L         4.122977   211           65.98848
+    # 3    TRUE        G         4.710757   317          113.27257
+    # 4    TRUE        L         3.461618   791          207.69706
+
+* `FALSE`, `G` is brownie with nuts, so we need 20 square inches of that
+* `FALSE`, `L` is cookie cake with nuts, so we 70 square inches of that
+* `TRUE`, `G` is brownie without nuts, so we need 120 square inches of that
+* `TRUE`, `L` is cookie cake without nuts, so we need 210 square inches of that
+
+We'll need approximately equal amounts of the different toppings.
+
+    summary(parking$PrimeType)
+      CGO CPO FPA PHO PPA 
+    2  49 487  71 301 486 
+
+We won't need many sprinkles.
+
+    summary(parking$MCCap == 0 & parking$ValetCap == 0)
+       Mode   FALSE    TRUE    NA's 
+    logical      55    1341       0 
+
+## Directions
+
+1. Get a plate, and write your name on the bottom of it so you can find your
+cookie later.
+2. Go to the website, and read the recipe that was selected for you.
+    Actually, maybe we just print this out and hand them out to people.
+3. Construct the cookie on the plate.
+4. Put the plate on the appropriate point on the map.
