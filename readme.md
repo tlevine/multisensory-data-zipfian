@@ -130,25 +130,65 @@ Percent of All Subject Officers Against Whom Allegations were Substantiated,0%,0
   This is related to a concept of hierarchy from graphic design; if you make
   one thing really big, people will know what to look at first, and then they
   can focus on the details if they're still interested.
-  I keep this in mind when I'm producing data visualizations and
-  when I'm doing data analyses in general.
+  This is helpful for producing data visualizations, but I also keep this in
+  mind when I'm doing data analyses in general.
+</p>
+<p class="comment">
+  I just talked a lot about a how to think of graphs and data analysis
+  in a multivariate way. Following Edward Tufte's advice, I aim to do this
+  in data visualizations, but there are only so many variables I can fit
+  on a graph. The previous visual used four variables, and I think
+  six variables is pretty close to the most that can reliably be fit nicely
+  on one static data visualization. So we need something more.
 </p>
 
 
 
 ## Videos
 [![complicated plot](4l-FixedScale-NoMuProf2-preview.png)](4l-FixedScale-NoMuProf2.gif)
+<p class="comment">
+  An obvious first step is video. This video relates a bunch of different
+  variables from some experiment at CERN. I don't know what it means, but you
+  can see how adding a time dimension allows for more variables to be presented
+  at once.
+</p>
 
 
 
 ## Data sonification
 [![FMS Symphony](fms-symphony-preview.png)](http://fms.csvsoundsystem.com)
+<p class="comment">
+  When we add a time dimension, we get more possibilities.
+  Of the five senses, vision is somewhat special in that we can look at many
+  different things at once. It's hard to listen to many different things at once,
+  so it's hard to present multiple variables through a few static notes,
+  but if we add the time dimension, we can represent complex multivariate in sound.
+</p>
+<p class="comment">
+  This is CSV Soundsystem's first music video, the FMS Symphony.
+  It's a story about the federal treasury, the federal interest rate, the debt
+  ceiling and the financial crisis. The high note is ..., the chords and flourishes
+  are .... And the video. And the data come from here. And the Chernoff face is
+  from the 15 first principal components of the table. And the thing that happens
+  at the financial crisis.
+</p>
 
 
 
 ## Data sonification
 <!-- Ridership Rachenitsa -->
 <video src="transit.webm" controls width="100%">
+<p class="comment">
+  Here's another CSV soundsystem video.
+  It uses both the New York City subway data we saw before
+  and similar data about Chicago buses.
+  New York subways get ten times the ridership, so these two figures are on
+  different scales, but they have a very consistent pattern of ridership.
+  There's one instrument for each city. High notes indicate more riders,
+  and low notes indicate less riders. There's this dip every measure for
+  the weekend. And once in a while we hear some change that we might want
+  to investigate further. For example, in the winter....
+</p>
 
 
 
