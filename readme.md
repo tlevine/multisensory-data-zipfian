@@ -189,19 +189,43 @@ Percent of All Subject Officers Against Whom Allegations were Substantiated,0%,0
   the weekend. And once in a while we hear some change that we might want
   to investigate further. For example, in the winter....
 </p>
+<p class="comment">
+  Sound opens up more possibilities, but there are still three more senses
+  we haven't looked at. If we're going to leverage our full sensory capabilities
+  to experience data, we're going to need to use touch, taste and smell too.
+  And I think the best way of doing that is through food.
+</p>
 
 
 
 ## Data gastronomification
 [![Data guacamole](data-guacamole.jpg)](https://github.com/tlevine/data-guacamole)
 [gastronomify R package](https://github.com/csv/gastronomify)
+<p class="comment">
+  To begin my exploration into this concept, I wrote an R package that varies
+  a base recipe based on a dataset. Then I produced two bowls of guacamole to
+  represent New York City math test scores for different years.
+</p>
+<p class="comment">
+  Each ingredient corresponds to the average score for a particular school grade
+  that year. There's more guacamole in the 2012 bowl because scores were higher
+  across the board that year. (So grade inflation.) And one of them was spicier
+  than the other because the sixth graders did proportionately better that year.
+</p>
+<p class="comment">
+  As interesting as that may be, this is a pretty boring data gastronomification.
+  The texture, visual appearance, smell and sound of the two bowls is quite
+  similar, so we're not really leveraging our sensory capacity.
+</p>
 
 
 
 ## Take-aways
 
 * Present the multivariate world; escape Flatland.
-* Data can be mapped to anything.
+* Explore and present data in a hierarchical way; start with the big picture,
+    then get more detailed.
+* Anything can be turned into data, and data can be mapped to anything.
 
 
 
@@ -210,3 +234,28 @@ Percent of All Subject Officers Against Whom Allegations were Substantiated,0%,0
 * [Music videos in R](http://livestre.am/4pN67)
 * [Data-driven rhythms](https://github.com/csv/ddr)
 * [A blog post](http://thomaslevine.com/!/sensory-data-experiences/)
+
+
+
+## Data cookies
+One last thing
+
+* Cookie base: Brownie for garage and chocolate chip cookie for open lot
+* Nuts: Public lots have nuts
+* Length (inches): Log number of parking spaces
+* Toppings correspond with the type of parking lot
+  * Oreo: Paid publicly available
+  * Reese's Piece: Customer parking only
+  * marshmallow: Permit holders only (monthly, employee, student, car share, etc)
+  * cherry: Commercial/government only
+  * jam: Free parking available
+* Sprinkles
+  * Red sprinkles if it has valet
+  * Blue sprinkles if it has motorcycle parking
+
+<p class="comment">
+  Data guacamole doesn't really use all the senses, and I wanted to make something
+  that did, so we prepared some data cookies for tonight.
+  Each cookie represents a parking lot in San Francisco.
+  [Read the different ingredients]
+</p>
