@@ -45,7 +45,8 @@ in the cookie/brownie.
 * For private, use the one **without** nuts.
 
 `land.use.type` is the zoning of the land. Rather than representing this
-in the cookie, let's represent this in the map.
+in the cookie, let's represent this in the map. Well I guess you might as
+well write it on the plate. Actually, it's mostly empty, so let's ignore it.
 
 `log.parking.spots` is the log number of parking spots, including valet
 and motorcycle. It is the log of the sum of the `RegCap`, `ValetCap`
