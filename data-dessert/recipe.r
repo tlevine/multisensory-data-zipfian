@@ -20,7 +20,7 @@ levels(recipes$topping.1) <- levels(recipes$topping.2) <- c(
 lng.lat <- ldply(strsplit(gsub('[^0-9,-.]', '', parking$Location.1), ','), function(l) { c(longitude=l[2], latitude = l[1]) })
 lng.lat$longitude <- as.numeric(lng.lat$longitude)
 lng.lat$latitude <- as.numeric(lng.lat$latitude)
-parking <- cbind(parking, lng.lat)
+recipes <- cbind(recipes, lng.lat)
 
 both <- cbind(recipes, parking)
 both <- subset(both, !is.na(cookie.type))
