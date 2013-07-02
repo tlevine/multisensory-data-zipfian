@@ -17,15 +17,15 @@ CSV Soundsystem ([csvsoundsystem.com](http://csvsoundsystem.com))
   to structured data that we can make sense of in a more
   automated way.
 </p>
-<p class="comment">
-  That helps, but now we have to deal with all of these data.
-  We need new tools to help us with these data.
-</p>
 
 
 
 ## Big data
 [![For handle big data, solution is very simple: buy bigger monitor and use smaller font in the terminal.](borat.png)](https://twitter.com/mysqlborat/status/306078371182428161)
+<p class="comment">
+  That helps, but now we have to deal with all of these data.
+  We need new tools to help us with these data.
+</p>
 <p class="comment">
   In previous classes, you've learned about tools for
   storing insane quantities of data and running calculations
@@ -119,7 +119,9 @@ Percent of All Subject Officers Against Whom Allegations were Substantiated,0%,0
   Well that line is the date of the storms.
   Subway stations got shut during the storms, and that explains the drops
   in ridership.
-  But when we look more closely
+  But when we look more closely, we see what might be errors in the data.
+  These lines going straight across might be missing data for those days
+  that should be represented as zero riders.
 </p>
 <p class="comment">
   You probably didn't need my narration in order to read this graph;
@@ -237,8 +239,7 @@ Percent of All Subject Officers Against Whom Allegations were Substantiated,0%,0
 
 
 
-## Data cookies
-One last thing
+## One last thing: Data cookies
 
 * Cookie base: Brownie for garage and chocolate chip cookie for open lot
 * Nuts: Public lots have nuts
