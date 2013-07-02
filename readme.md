@@ -178,8 +178,8 @@ Percent of All Subject Officers Against Whom Allegations were Substantiated,0%,0
 
 
 ## Data sonification
-<!-- Ridership Rachenitsa -->
-<video src="transit.webm" controls width="100%">
+[Ridership Rachenitsa](transit.webm)
+<!-- <video src="transit.webm" controls width="100%"> -->
 <p class="comment">
   Here's another CSV soundsystem video.
   It uses both the New York City subway data we saw before
@@ -201,8 +201,8 @@ Percent of All Subject Officers Against Whom Allegations were Substantiated,0%,0
 
 
 ## Data gastronomification
-[![Data guacamole](data-guacamole.jpg)](https://github.com/tlevine/data-guacamole)
 [gastronomify R package](https://github.com/csv/gastronomify)
+[![Data guacamole](data-guacamole.jpg)](https://github.com/tlevine/data-guacamole)
 <p class="comment">
   To begin my exploration into this concept, I wrote an R package that varies
   a base recipe based on a dataset. Then I produced two bowls of guacamole to
