@@ -167,6 +167,10 @@ We have four tables. At each table, we need
 * Two spoons
 * Three spatulas
 
+The map should be square, with the bottom left corner at (-122.52, 37.71)
+and the top-right corner at (-122.39, 37.81). Cells should be one degree
+square. (Cells will not appear square.)
+
 ## Calculating amounts
 For the proportions of the cakes, consider this
 
